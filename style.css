@@ -1,5 +1,73 @@
+/****************************
+general
+****************************/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-family: "PT Sans", sans-serif; 
+}
+img{
+    max-width:100%;
+}
+/****************************
+debug
+****************************/
+*{
+    outline: 1px solid red;
+}
+/****************************
+all color
+****************************/
+header , .app-store{
+    background-color:rgb(0, 132, 253) ;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/****************************
+header
+****************************/
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.hamburger-menu{
+    position: absolute;
+    top: 50%;
+    right: 0 ;
+    transform: translate(0, -50%);
+}
+.logo{
+    padding: 5px 0;
+}
+.fa-bars{
+    font-size: 2rem;
+}
+a{
+    margin: 10px;
+}
+/****************************
+media query
+****************************/
+
+@media screen and (min-width: 640px){
+    
+    .hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    
+    .menu{
+        display: none;
+    }
 }
